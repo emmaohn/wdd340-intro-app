@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/index.js" defer></script>
+  </head>
+  <body class="bg-slate-800 mx-20">
+    <div class="text-white my-5">
+      <h2 class="font-bold text-xl">Hi, I'm Jojo!</h2>
+      <p class="mb-5">I love rock climbing, web dev and my puppy!</p>
+      <div class="flex gap-5">
+        <img class="block w-full rounded-3xl" src="images/rock-climbing.jpeg" alt="Jojo rock climbing">
+        <img class="block w-full rounded-3xl" src="images/jojo-and-ollie.jpeg" alt="Jojo and Ollie at the airport">
+      </div>
+    </div>
+
+    <h2 class="text-white text-xl">Tailwind sample:</h2>
+    <div class="bg-white p-4 rounded-lg my-5">
+      <div class="flex m-auto">
+        <svg class="w-12 mr-3" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="a"> <stop stop-color="#2397B3" offset="0%"></stop> <stop stop-color="#13577E" offset="100%"></stop> </linearGradient>
+            <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="b"> <stop stop-color="#73DFF2" offset="0%"></stop> <stop stop-color="#47B1EB" offset="100%"></stop> </linearGradient>
+          </defs>
+          <g fill="none" fill-rule="evenodd">
+            <path d="M28.872 22.096c.084.622.128 1.258.128 1.904 0 7.732-6.268 14-14 14-2.176 0-4.236-.496-6.073-1.382l-6.022 2.007c-1.564.521-3.051-.966-2.53-2.53l2.007-6.022A13.944 13.944 0 0 1 1 24c0-7.331 5.635-13.346 12.81-13.95A9.967 9.967 0 0 0 13 14c0 5.523 4.477 10 10 10a9.955 9.955 0 0 0 5.872-1.904z" fill="url(#a)" transform="translate(1 1)" ></path>
+            <path d="M35.618 20.073l2.007 6.022c.521 1.564-.966 3.051-2.53 2.53l-6.022-2.007A13.944 13.944 0 0 1 23 28c-7.732 0-14-6.268-14-14S15.268 0 23 0s14 6.268 14 14c0 2.176-.496 4.236-1.382 6.073z" fill="url(#b)" transform="translate(1 1)" ></path>
+            <path d="M18 17a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM24 17a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM30 17a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" fill="#FFF" ></path>
+          </g>
+        </svg>
+        <div class="leading-0">
+          <p class="font-bold">ChitChat</p>
+          <p>You have a new message!</p>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="text-white text-xl">Typescript sample:</h2>
+    <div class="my-5">
+      <h1 class="text-white mb-1">Choose Rock Paper or Scissors:</h1>
+      <div class="flex gap-5 text-black mb-3">
+        <button class="bg-white py-2 px-3 rounded-lg" type="button" id="rock">Rock <i class="fa-solid fa-circle"></i></button>
+        <button class="bg-white py-2 px-3 rounded-lg" type="button" id="paper">Paper <i class="fa-solid fa-square"></i></button>
+        <button class="bg-white py-2 px-3 rounded-lg" type="button" id="scissors">scissors <i class="fa-solid fa-scissors"></i></button>
+      </div>
+      <div class="text-white mb-1">Computer Choice: <span id="compChoice"></span></div>
+      <div class="flex gap-5">
+        <div class="bg-white py-2 px-3 rounded-lg">Wins: <span id="wins">0</span></div>
+        <div class="bg-white py-2 px-3 rounded-lg">losses: <span id="losses">0</span></div>
+        <div class="bg-white py-2 px-3 rounded-lg">Draws: <span id="draws">0</span></div>
+      </div>
+    </div>
+  </body>
+</html>
